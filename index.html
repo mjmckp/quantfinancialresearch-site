@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quant Financial Research</title>
+<meta name="description" content="Quant Financial Research Pty Ltd publishes systematic, evidence-led research on markets, factors, and portfolio construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Systematic research · Sydney</div>
+        <h1>Signal from noise.<br><em>Measured, not guessed.</em></h1>
+        <p class="lead">Quant Financial Research publishes rigorous, data-driven research on cross-asset factors, market microstructure, and portfolio construction for professional investors.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="subscribe.html">Subscribe to research →</a>
+          <a class="btn btn-ghost" href="contact.html">Talk to us</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head">
+          <span class="title">QFR COMPOSITE vs BENCHMARK</span>
+          <span class="pill live">● LIVE</span>
+        </div>
+        <div id="equity"></div>
+        <div class="panel-head" style="margin:10px 0 0">
+          <span><span class="up">━</span> Composite signal &nbsp; <span class="muted">┅</span> Benchmark</span>
+          <span>Indexed to 100</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="label">Annualised return</div><div class="value up" data-count="14.2" data-dec="1" data-suf="%">0%</div><div class="sub">Composite, net of costs</div></div>
+      <div class="stat"><div class="label">Sharpe ratio</div><div class="value" data-count="1.87" data-dec="2">0</div><div class="sub">Rolling 5 years</div></div>
+      <div class="stat"><div class="label">Max drawdown</div><div class="value down" data-count="-8.4" data-dec="1" data-suf="%">0%</div><div class="sub">Peak to trough</div></div>
+      <div class="stat"><div class="label">Research notes</div><div class="value" data-count="214">0</div><div class="sub">Published since 2021</div></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Risk, measured continuously</h2>
+      <p class="section-intro">Every signal we publish comes with its full risk profile: drawdowns, rolling risk-adjusted returns, and month-by-month attribution.</p>
+      <div class="grid-2">
+        <div class="panel">
+          <div class="panel-head"><span class="title">DRAWDOWN</span><span>% from peak</span></div>
+          <div id="drawdown"></div>
+          <div class="panel-head" style="margin-top:18px"><span class="title">ROLLING 12M SHARPE</span><span>annualised</span></div>
+          <div id="sharpe"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><span class="title">SIGNAL MONITOR</span><span class="pill live">● STREAMING</span></div>
+          <table class="data">
+            <thead><tr><th>Instrument</th><th>Factor</th><th class="num">Z-score</th><th class="num">Position</th></tr></thead>
+            <tbody id="signals"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid-2">
+      <div class="panel">
+        <div class="panel-head"><span class="title">MONTHLY RETURNS (%)</span><span>Composite</span></div>
+        <div class="heatmap" id="heatmap"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><span class="title">RESEARCH PIPELINE</span><span>qfr-engine v4.2</span></div>
+        <div class="terminal" id="terminal"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What we research</h2>
+      <p class="section-intro">Our work spans the full systematic process, from raw data to deployable portfolios.</p>
+      <div class="grid-3">
+        <div class="panel card"><div class="ico">01 / FACTORS</div><h3>Cross-asset factor research</h3><p>Momentum, carry, value, quality, and low-volatility premia across equities, rates, FX, and commodities.</p></div>
+        <div class="panel card"><div class="ico">02 / MICROSTRUCTURE</div><h3>Execution and market impact</h3><p>Transaction cost models, liquidity forecasting, and intraday order-flow analysis for ASX and global venues.</p></div>
+        <div class="panel card"><div class="ico">03 / PORTFOLIOS</div><h3>Portfolio construction</h3><p>Risk budgeting, covariance shrinkage, regime detection, and robust optimisation under realistic constraints.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="panel" style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:32px">
+        <div>
+          <h2 style="margin-bottom:4px">Get the weekly research note</h2>
+          <p class="muted" style="margin:0">Factor performance, new findings, and code-level methodology, every Monday.</p>
+        </div>
+        <a class="btn btn-primary" href="subscribe.html">Subscribe →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

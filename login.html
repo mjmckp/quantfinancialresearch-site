@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subscriber login · Quant Financial Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="login">
+
+<main class="auth wrap">
+  <div class="auth-box">
+    <form class="panel" style="padding:32px" data-mock="Subscriber login is not available yet on this demonstration site.">
+      <div class="eyebrow">Subscriber portal</div>
+      <h1 style="margin-top:12px">Sign in</h1>
+      <p class="muted" style="margin:0 0 24px">Access research papers, signal data, and your account.</p>
+      <div class="field"><label for="lemail">Email</label><input id="lemail" name="email" type="email" required autocomplete="username"></div>
+      <div class="field"><label for="lpass">Password</label><input id="lpass" name="password" type="password" required autocomplete="current-password"></div>
+      <div class="auth-row">
+        <label class="check" style="margin:0"><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Sign in →</button>
+      <div class="notice" role="status"></div>
+      <div class="divider">OR</div>
+      <button class="btn btn-ghost btn-block" type="button">Sign in with SSO</button>
+      <p class="muted" style="text-align:center;font-size:14px;margin:20px 0 0">Not a subscriber? <a href="subscribe.html">Subscribe</a></p>
+    </form>
+  </div>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

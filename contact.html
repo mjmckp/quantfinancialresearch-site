@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Quant Financial Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="contact">
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Contact</div>
+    <h1>Talk to the research team</h1>
+    <p class="lead">Questions about our research, institutional access, or a custom study? Send us a message and we reply within two business days.</p>
+  </div>
+
+  <div class="form-grid" style="padding-bottom:64px">
+    <form class="panel" style="padding:28px" data-mock="Thanks — your message is noted. (This is a demonstration site, so nothing was sent.)">
+      <div class="row">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="org">Organisation</label><input id="org" name="org" autocomplete="organization"></div>
+        <div class="field"><label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>General enquiry</option>
+            <option>Institutional subscription</option>
+            <option>Custom research</option>
+            <option>Media</option>
+            <option>Careers</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label for="msg">Message</label><textarea id="msg" name="message" required></textarea></div>
+      <button class="btn btn-primary" type="submit">Send message →</button>
+      <div class="notice" role="status"></div>
+    </form>
+
+    <aside class="panel">
+      <ul class="info-list">
+        <li><div class="k">Email</div>research@quantfinancialresearch.com</li>
+        <li><div class="k">Office</div>Level 12, Sydney NSW 2000<br>Australia</li>
+        <li><div class="k">Hours</div>Monday to Friday, 08:30–17:30 AEST</li>
+        <li><div class="k">Company</div>Quant Financial Research Pty Ltd</li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

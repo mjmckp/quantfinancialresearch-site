@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subscribe · Quant Financial Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="subscribe">
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Research publications</div>
+    <h1>Subscribe to QFR research</h1>
+    <p class="lead">Choose a plan, and we deliver new research to your inbox the moment it publishes.</p>
+  </div>
+
+  <form data-mock="You're on the list. (This is a demonstration site, so no subscription was created.)" style="padding-bottom:64px">
+    <div class="plans">
+      <label class="panel plan">
+        <input type="radio" name="plan" value="weekly" checked>
+        <div class="name">Weekly note</div>
+        <div class="price">Free</div>
+        <ul><li>Monday factor performance wrap</li><li>One new finding each week</li><li>Market regime snapshot</li></ul>
+      </label>
+      <label class="panel plan">
+        <input type="radio" name="plan" value="professional">
+        <div class="name">Professional</div>
+        <div class="price">$49<span> / month</span></div>
+        <ul><li>Everything in Weekly</li><li>Full research papers and methodology</li><li>Monthly signal data (CSV)</li><li>Subscriber portal access</li></ul>
+      </label>
+      <label class="panel plan">
+        <input type="radio" name="plan" value="institutional">
+        <div class="name">Institutional</div>
+        <div class="price">Custom</div>
+        <ul><li>Everything in Professional</li><li>Daily signals via API</li><li>Analyst access and custom studies</li><li>Multi-seat licence</li></ul>
+      </label>
+    </div>
+
+    <div class="form-grid">
+      <div class="panel" style="padding:28px">
+        <div class="row">
+          <div class="field"><label for="fname">First name</label><input id="fname" name="first" required autocomplete="given-name"></div>
+          <div class="field"><label for="lname">Last name</label><input id="lname" name="last" required autocomplete="family-name"></div>
+        </div>
+        <div class="field"><label for="semail">Work email</label><input id="semail" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="role">Role</label>
+          <select id="role" name="role">
+            <option>Portfolio manager</option>
+            <option>Quantitative researcher</option>
+            <option>Analyst</option>
+            <option>Trader</option>
+            <option>Academic</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" checked> Weekly research note</label>
+        <label class="check"><input type="checkbox" checked> New paper alerts</label>
+        <label class="check"><input type="checkbox"> Event and webinar invitations</label>
+        <label class="check"><input type="checkbox" required> I agree to receive email from Quant Financial Research and can unsubscribe at any time.</label>
+        <button class="btn btn-primary" type="submit" style="margin-top:8px">Subscribe →</button>
+        <div class="notice" role="status"></div>
+      </div>
+
+      <aside class="panel">
+        <div class="panel-head"><span class="title">RECENT PUBLICATIONS</span></div>
+        <ul class="info-list">
+          <li><div class="k">#214 · 2026-10-26</div>Trend following after rate-cut cycles: evidence from 40 years of futures</li>
+          <li><div class="k">#213 · 2026-10-19</div>Shrinkage covariance for small-cap ASX portfolios</li>
+          <li><div class="k">#212 · 2026-10-12</div>The volatility risk premium in AUD options</li>
+          <li><div class="k">#211 · 2026-10-05</div>Purged cross-validation: a practitioner's checklist</li>
+        </ul>
+      </aside>
+    </div>
+  </form>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
